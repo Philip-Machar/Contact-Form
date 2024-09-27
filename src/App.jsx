@@ -3,7 +3,7 @@ import ContactForm from './components/ContactForm'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-screen h-screen bg-green-100 grid place-content-center'>
       <ContactForm />
     </div>
   )

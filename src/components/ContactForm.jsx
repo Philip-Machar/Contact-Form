@@ -1,26 +1,49 @@
 const ContactForm = () => {
   return (
-    <form className="bg-while p-4">
-        <h2 text-2xl font-bold mb-4>Contact Us</h2>
+    <form className="bg-white p-4 rounded-md flex flex-col gap-4">
+        <h1>Contact Us</h1>
 
-        <label htmlFor="firstName">First Name *</label>
-        <input type="text" />
+        <div className="flex gap-4"> 
+          <div className="flex flex-col">
+            <label htmlFor="firstName">First Name *</label>
+            <input className="border-[2px] rounded" type="text" />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="lastName">Last Name *</label>
+            <input className="border-[2px] rounded" type="text" />
+          </div>
+        </div>
 
-        <label htmlFor="lastName">Last Name *</label>
-        <input type="text" />
+        <div>
+          <label htmlFor="email">Email *</label>
+          <input className="border-[2px] rounded w-full" type="email" />
+        </div>
 
-        <label htmlFor="email">Email *</label>
-        <input type="text" />
+        <div>
+          <label htmlFor="queryType">Query Type *</label>
+          <div className="flex gap-4">
+            <div className="flex gap-2 border-[2px] px-4 py-2 rounded">
+              <input type="radio" />
+              <div>General Enquiry</div>
+            </div>
+            <div className="flex gap-2 border-[2px] px-4 py-2 rounded">
+              <input type="radio" />
+              <div>Support Request</div>
+            </div>
+          </div>
+        </div>
 
-        <label htmlFor="query">Query Type *</label>
-        <input type="radio" />
-        <input type="radio" />
+        <div>
+          <label htmlFor="message">Message *</label>
+          <textarea className="border-[2px] rounded w-full h-24" />
+        </div>
 
-        <label htmlFor="mesaage">Message</label>
-        <input type="textarea" />
+        <div className="flex gap-2">
+          <input type="checkbox" />
+          <div>I consent to being contacted by the team *</div>
+        </div>
 
-        <label htmlFor="check"></label>
-        <input type="checkbox" />
+        <button className="text-white bg-green-medium rounded py-2">Submit</button>
     </form>
   )
 }

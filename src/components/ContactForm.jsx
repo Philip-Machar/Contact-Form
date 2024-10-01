@@ -6,17 +6,17 @@ const ContactForm = () => {
         <div className="flex gap-4"> 
           <div className="flex flex-col gap-2 w-full">
             <label className="flex gap-2" htmlFor="firstName">First Name <div className="text-green-medium">*</div></label>
-            <input className="border-green-lighter border-[2px] rounded h-9" type="text" />
+            <input className="border-green-lighter border-[2px] rounded h-9 outline-none px-2" type="text" />
           </div>
           <div className="flex flex-col gap-2 w-full">
             <label className="flex gap-2" htmlFor="lastName">Last Name <div className="text-green-medium">*</div></label>
-            <input className="border-green-lighter border-[2px] rounded h-9" type="text" />
+            <input className="border-green-lighter border-[2px] rounded h-9 outline-none px-2" type="text" />
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <label className="flex gap-2" htmlFor="email">Email Address <div className="text-green-medium">*</div></label>
-          <input className="border-green-lighter border-[2px] rounded w-full h-9" type="email" />
+          <input className="border-green-lighter border-[2px] rounded w-full h-9 outline-none px-2" type="email" />
         </div>
 
         <div className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ const ContactForm = () => {
 
         <div className="flex flex-col gap-2">
           <label className="flex gap-2" htmlFor="message">Message <div className="text-green-medium">*</div></label>
-          <textarea className="border-green-lighter border-[2px] rounded w-full h-24" />
+          <textarea className="border-green-lighter border-[2px] rounded w-full h-24 outline-none px-2 py-1" />
         </div>
 
         <div className="flex gap-4 items-center mb-2 mt-2">
